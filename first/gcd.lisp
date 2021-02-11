@@ -22,5 +22,9 @@
     (parse-integer 
         (read-line)))
 
-(format t "The GCD of ~a and ~a is ~a" (getf *input* :a) (getf *input* :b) 
-    (gcdE (getf *input* :a) (getf *input* :b)))
+(format t "The GCD of ~a and ~a is ~a" 
+    (getf *input* :a) 
+    (getf *input* :b) 
+    (gcdE 
+        (getf *input* :a) 
+        (getf *input* :b)))

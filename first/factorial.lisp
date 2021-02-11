@@ -10,4 +10,6 @@
 
 (format t "Type the x ")
 (format t "Factorial of x is ~a" 
-    (fact (parse-integer (read-line))))
+    (fact 
+        (parse-integer 
+            (read-line))))
