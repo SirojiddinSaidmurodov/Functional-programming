@@ -7,24 +7,17 @@
         (gcdE n 
             (mod m n))) )
 
-
-(defvar *input* 
-    (list :a 0 :b 0))
-
-(format t "Enter a: ")
-(setf 
-    (getf *input* :a)
+(defun prompt-read 
+    (varname)
+    (format t "Enter the ~a " varname)
     (parse-integer 
         (read-line)))
-(format t "Enter b: ")
-(setf 
-    (getf *input* :b)
-    (parse-integer 
-        (read-line)))
+(let 
+    (
+        (a 
+            (prompt-read "a") ) 
+        (b 
+            (prompt-read "b")))
 
-(format t "The GCD of ~a and ~a is ~a" 
-    (getf *input* :a) 
-    (getf *input* :b) 
-    (gcdE 
-        (getf *input* :a) 
-        (getf *input* :b)))
+    (format t "The GCD of ~a and ~a is ~a" a b
+        (gcdE a b)))
