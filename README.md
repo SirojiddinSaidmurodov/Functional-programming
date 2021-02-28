@@ -26,6 +26,12 @@ Go to [SourceForge](https://sourceforge.net/projects/clisp/files/) and download 
 Unpack the zip-archive, and add the folder to the system path.
 * For running interpreter run `clisp` command.
 * `clisp -h` for help
+  
+#### Mac OS/ OS X
+You can install Common Lisp interpreter via [Homebrew](https://brew.sh/):
+```bash
+brew install clisp
+```
 
 ## Hello world 
 ```lisp
