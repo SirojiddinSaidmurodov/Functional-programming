@@ -22,7 +22,7 @@ sudo apt install clisp
 * For running interpreter run `clisp` command.
 * `man clisp` or `clisp -h` for help
 #### Windows
-Go to [SourceForge](https://sourceforge.net/projects/clisp/files/) and download `clisp-X.XX-win32-mingw-big.zip` for example clisp-2.49-win32-mingw-big.zip.
+Go to [SourceForge](https://sourceforge.net/projects/clisp/files/) and download `clisp-X.XX-win32-mingw-big.zip` for example clisp-2.49-win32-mingw-big.zip. [Direct downloading link for v2.49](https://sourceforge.net/projects/clisp/files/clisp/2.49/clisp-2.49-win32-mingw-big.zip/download)
 Unpack the zip-archive, and add the folder to the system path.
 * For running interpreter run `clisp` command.
 * `clisp -h` for help
