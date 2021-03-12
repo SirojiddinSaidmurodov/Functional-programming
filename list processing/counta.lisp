@@ -1,3 +1,4 @@
+; counting the elements number in the atomic list
 (defun counta (list)
     (if (eq (cdr list) NIL)
         (if (eq (car list) NIL)

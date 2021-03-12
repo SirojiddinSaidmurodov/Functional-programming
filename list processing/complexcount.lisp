@@ -1,3 +1,4 @@
+; Counts atoms number in any structured list
 (defun complexcount (input) 
     (if (atom input)
         (if (eq NIL input)

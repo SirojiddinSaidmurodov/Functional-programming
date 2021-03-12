@@ -1,3 +1,4 @@
+; finding minimum in numeric list
 (defun minn (input)
     (if (eq (cdr input) NIL)
         (if (eq (car input) NIL)

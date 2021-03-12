@@ -1,3 +1,4 @@
+; finding maximum in numeric list
 (defun maxx (list)
     (if (eq (cdr list) NIL)
         (if (eq (car list) NIL)

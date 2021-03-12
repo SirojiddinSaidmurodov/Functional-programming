@@ -1,3 +1,4 @@
+; Integer devision
 (defun div (a b) 
     (if (eq (mod a b) 0) 
         (/ a b)

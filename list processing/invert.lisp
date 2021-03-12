@@ -1,3 +1,4 @@
+; custom append func which add a list to another
 (defun appendc (list_in1 list_in2)
     (if (eq (cdr list_in1) NIL)
         (if (eq (car list_in1) NIL)
