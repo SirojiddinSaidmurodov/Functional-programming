@@ -1,15 +1,14 @@
 ; finding minimum in numeric list
 (defun minn (input)
     (if (eq (cdr input) NIL)
-        (if (eq (car input) NIL)
-            NIL
-            (car input)
-        )
-        (if (<= (car input) (minn (cdr input)))
-            (car input)
-            (minn (cdr input))
+        (car input)
+        (let ((min_cdr (minn (cdr input))))
+            (if (<= (car input) min_cdr)
+                (car input)
+                min_cdr
+            )
         )
     )
 )
 
-; (print (minn `(5 8 0 8 9 -9)))
+(print (minn `(5 8 0 8 9 -9)))
