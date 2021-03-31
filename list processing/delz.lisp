@@ -1,0 +1,21 @@
+(defun delz (input)
+    (if (cdr input)
+        (if (atom (car input))
+            (if (eq (car input) 0)
+                (delz (cdr input))
+                (cons (car input) (delz (cdr input)))
+            )
+            (cons (delz (car input)) (delz (cdr input)))
+        )
+        (if (atom (car input))
+            (if (eq (car input) 0)
+                NIL
+                (list (car input))
+            )
+            (delz (car input))
+        )
+    )
+)
+
+
+(print (delz `(1 5 0 8 (7 0 5 2 0) 8 0 5)))
